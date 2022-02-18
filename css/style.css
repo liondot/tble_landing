@@ -1048,7 +1048,7 @@ section#promotion {
 /* ****************** review ****************** */
 section#review {
     height: 53vh;
-    padding-bottom: 50px;
+    padding: 100px 0 80px;
 }
 
 #review {
