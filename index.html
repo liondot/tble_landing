@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TBLE ADD</title>
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/c741f3b9be.js" crossorigin="anonymous"></script>
+    <!-- swiper  -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swiper/swiper.min.js"></script>
+    <!-- slick slide  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- wow js  -->
+    <link rel="stylesheet" href="js/wow/animate.css">
+    <script src="js/wow/wow.min.js"></script>
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow', // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 0, // distance to the element when triggering the animation (default is 0)
+            mobile: true, // trigger animations on mobile devices (default is true)
+            live: true, // act on asynchronously loaded content (default is true)
+            callback: function (box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null, // optional scroll container selector, otherwise use window,
+            resetAnimation: true, // reset animation on end (default is true)
+        });
+        wow.init();
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <section id="main">
+        <div class="main_lef">
+            <div class="lef_img">
+                <div class="main_s main_nav">
+                    <img src="imgs/phone1.png" class="ph_img nvd_ph" alt="핸드폰 이미지">
+                    <img src="imgs/naver_logo.png" class="sns_logo inst" alt="네이버로고">
+                </div>
+                <div class="main_s main_inst">
+                    <img src="imgs/insta_logo.png" class="sns_logo nvd" alt="인스타로고">
+                    <img src="imgs/phone2.png" class="ph_img inst_ph" alt="핸드폰 이미지">
+                </div>
+            </div>
+            <div class="lef_txt">
+                <img src="imgs/logo_black.png" alt="">
+                <h3>체험단 1등 플랫폼
+                    <span>티블</span>
+                </h3>
+                <p>첫 광고주 대상 <em>1회 무료 체험권 </em>제공</p>
+            </div>
+        </div>
+        <div class="main_ri">
+            <div class="main_se">
+                <img src="imgs/logo_white.png" alt="">
+                <span>티블 광고 문의</span>
+            </div>
+            <div class="container">
+                <form action="https://formspree.io/f/xknyrnew" method="POST">
+                    <input type="text" name="company" placeholder="회사명을 입력해주세요" required>
+                    <input type="text" name="area" placeholder="지역을 입력해주세요" required>
+                    <input type="text" name="name" placeholder="성함과 직책을 입력해주세요" required>
+                    <input type="text" name="number" placeholder="연락처를 입력해주세요 (숫자만 입력)" required>
+                    <textarea name="Message" placeholder="문의내용:" id="" cols="30" rows="10" required></textarea>
+                    <button type="submit">광고문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- #main section -->
+    <section id="promotion">
+        <img src="imgs/tble_logo2.svg" alt="" class="pro_logo">
+        <h3>첫 광고주 대상 <span>프로모션</span></h3>
+        <div class="pr_swiper">
+            <div class="pro_card_con swiper-wrapper">
+                <div class="pro_cards swiper-slide">
+                    <div class="pro_card">
+                        <div class="pro_txt">
+                            <div class="pro_title">선택 01</div>
+                            <span>첫 광고주</span>
+                            <p>1회 무료 체험권</p>
+                            <em>1회 무료 체험권</em>
+                        </div>
+                        <div class="pro_img">
+                            <img src="imgs/pro_icon1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="pro_card">
+                        <div class="pro_txt">
+                            <div class="pro_title">선택 02</div>
+                            <span>첫 상담 계약 시</span>
+                            <p>1개월 연장 서비스 추가 제공</p>
+                            <em>1개월 연장 서비스 추가 제공</em>
+                        </div>
+                        <div class="pro_img">
+                            <img src="imgs/pro_icon4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="pro_cards swiper-slide">
+                    <div class="pro_card ">
+                        <div class="pro_txt">
+                            <div class="pro_title">선택 01</div>
+                            <span>첫 상담 계약 시</span>
+                            <p>찜하기 추가 서비스</p>
+                            <em>상품찜 및 스토어찜 추가 제공</em>
+                        </div>
+                        <div class="pro_img">
+                            <img src="imgs/pro_icon2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="pro_card">
+                        <div class="pro_txt">
+                            <div class="pro_title">선택 02</div>
+                            <span>첫 상담 계약 시</span>
+                            <p>경쟁업체 키워드광고 분석자료 제공</p>
+                            <em>1회 150,000원 상당 분석자료 무료 제공</em>
+                        </div>
+                        <div class="pro_img">
+                            <img src="imgs/pro_icon3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pr-pagination swiper-pagination"></div>
+
+            <div class="pr-button swiper-button-prev"></div>
+            <div class="pr-button swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- #promotion section -->
+    <section id="only">
+        <div class="only_title">
+            <h3>
+                선택의 기준 <span><strong>오직 <em>티블</em>에서만</strong> ONLY TBLE</span>
+            </h3>
+        </div>
+        <div class="tabs only_tabs new_swiper">
+            <div class="items only_items swiper-wrapper">
+                <div id="tabs-1" class="swiper-slide">
+                    <img src="imgs/FREE.png" alt="">
+                    <div class="free_txts">
+                        <div class="free_txt">
+                            <strong>티블의 무제한 모집 SYSTEM</strong>
+                            <span>티블은 될 때 까지! 인원 제약 無 <br>
+                                오직 티블에서만가능합니다. </span>
+                            <em>*업종&지역 등에 따라 모집률은 상이할 수 있습니다. <br>
+                                *한 회차 당 한 개의 제공 내역을 원칙으로 합니다.</em>
+                        </div>
+                        <div class="free_txt">
+                            <strong>TBLE의 진행 속도는 2배</strong>
+                            <span>타사는 월 1회, 티블은 월 2회 진행 <br>
+                                티블은 자동화 시스템을 통해 <br>
+                                가능합니다</span>
+                        </div>
+                        <div class="free_txt">
+                            <strong>실시간 보고 시스템</strong>
+                            <span>자동 알림톡 시스템을 통해, 캠페인 등록, <br>
+                                리뷰선정 등을 실시간으로 알려드립니다. </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-2" class="swiper-slide">
+                    <div class="tab2_img">
+                        <img src="imgs/report.png" alt="">
+                        <img src="imgs/report2.png" alt="">
+                    </div>
+                    <div class="tab2 free_txts">
+                        <p>온라인 마케팅은 진행뿐만 아니라 광고주님들께서 확인 하실 수 있는 보고 내용이 가장 중요합니다. <br>
+                            티블은 정확한 데이터 기반 분석시스템을 통해, <strong>고도화된 마케팅 리포트를 제공</strong>합니다.</p>
+                    </div>
+                </div>
+                <div id="tabs-3" class="swiper-slide">
+                    <p>
+                        리뷰 마케팅에는 다양한 정보가 존재합니다. 티블은 다양한 정보를 빅데이터화하여 최적의 마케팅 솔루션을 제공하고 <br>
+                        수년간의 노하우로 체계적으로 리뷰어를 관리하는 전문성을 보유하고 있습니다.
+                    </p>
+                    <div class="tab3_img">
+                        <img src="imgs/bigdata.png" alt="">
+                    </div>
+                    <div class="tabs3_txts free_txts">
+                        <div class="tabs3_txt free_txt">
+                            <strong>데이터 기반 전문적 관리</strong>
+                            <span>등급, 방문자, 신청현황,
+                                선정현황, 등록현황, 히스토리,<br>
+                                계정등급등 분석관리 </span>
+                        </div>
+                        <div class="tabs3_txt free_txt">
+                            <strong>효율적 리뷰어 관리</strong>
+                            <span>리뷰어의 포스팅분야, 활동지역
+                                성별, 직업 등 카테고리화</span>
+                        </div>
+                        <div class="tabs3_txt free_txt">
+                            <strong>체계적인 <br>
+                                리뷰어 관리 시스템</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-pagination swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- #only section 오직 티블  -->
+    <section id="streng" class="st_sce">
+        <div class="streng_container wow slideInLeft" data-wow-duration="1.5s">
+            <div class="streng">
+                <img src="imgs/img_yellow.png" class="streng_img" alt="">
+                <div class="st_boxs">
+                    <div class="st_box wow rotateIn" data-wow-delay="1.5s">
+                        <img src="imgs/3section_icon.png" alt="">
+                        <div class="st_des">
+                            <span>한번에</span>
+                            <em>모든 마케팅 솔루션 <br>
+                                One-Stop으로 제공</em>
+                        </div>
+                    </div>
+                    <div class="st_box wow rotateIn" data-wow-delay="1.7s">
+                        <img src="imgs/3section_icon2.png" alt="">
+                        <div class="st_des">
+                            <span>쉽다</span>
+                            <em>실시간 광고주 현황 <br>
+                                확인 가능</em>
+                        </div>
+                    </div>
+                    <div class="st_box wow rotateIn" data-wow-delay="1.9s">
+                        <img src="imgs/3section_icon3.png" alt="">
+                        <div class="st_des">
+                            <span>전문적이다</span>
+                            <em>분석 시스템의 <br>
+                                빅데이터를 통한 마케팅</em>
+                        </div>
+                    </div>
+                    <div class="st_box wow rotateIn" data-wow-delay="2.1s">
+                        <img src="imgs/3section_icon4.png" alt="">
+                        <div class="st_des">
+                            <span>확실한 효과</span>
+                            <em>엄격한 관리 정책을 통해 <br>
+                                최적화된 리뷰어 매칭</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #streng 티블 장점  -->
+    <section id="campaign">
+        <div class="campaign_con">
+            <h3><strong>티블</strong>은 <br>
+                총 <strong>123,456 건</strong>의 <strong>체험단 캠페인을 진행</strong>했습니다.
+            </h3>
+            <div class="campaign_box">
+                <div class="more_btn">
+                    <a href="https://tble.kr/" class="campaing_more">더 많은 캠페인 보러가기<i
+                            class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="campaign_cards">
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=225272">
+                            <img src="imgs/1.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 편안하고 안락한 유아자전거</strong> <br>
+                                    유아세발자전거 제공
+                                </p>
+                            </div>
+                            <em><b>신청 244</b> / 3명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224277">
+                            <img src="imgs/1-1.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[방문] 오늘의 브런치는 여기다 궁전 느낌의 </strong> <br>
+                                    3단 브런치 세트 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224615">
+                            <img src="imgs/2.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 심플하지만 고급스러운 크로스백</strong> <br>
+                                    자체제작 가방 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224541">
+                            <img src="imgs/2-1.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[방문] 데이트코스로 안성맞춤인 핫플레이스</strong> <br>
+                                    2인 식사권 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=226398">
+                            <img src="imgs/3.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 집에서도 간편하게 고기 구워먹자</strong> <br>
+                                    가정용 미니화로 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224131">
+                            <img src="imgs/3-1.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[방문] 직접 캔들 제작해 선물해보아요</strong> <br>
+                                    캔들만들기 원데이클라스 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224183">
+                            <img src="imgs/4.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 훈연맛을 느낄수 있는 진짜 맛있는 닭다리</strong> <br>
+                                    베이크 닭다리 세트 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224161">
+                            <img src="imgs/4-1.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[방문] 신체피부의 변화를 느껴보고 싶다면 바로 이곳</strong> <br>
+                                    상체 / 하체관리 중 택1
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=224661">
+                            <img src="imgs/5.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송]시원한 돼지국밥으로 한끼 해결</strong> <br>
+                                    돼지국밥 2인상 2팩 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=220211">
+                            <img src="imgs/6.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 나만의 수제 도마를 평생 간직해보세요</strong> <br>
+                                    동원목 수제 도마 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=225706">
+                            <img src="imgs/7.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 오리고기가 들어간 영양최고 밀키트 세트</strong> <br>
+                                    오리고기 밀키트 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                    <div class="campaign_card">
+                        <a href="https://tble.kr/view.php?cp_id=225231">
+                            <img src="imgs/8.png" alt="">
+                            <div class="cam_sub_tit">
+                                <strong class="fir">마감된 캠페인</strong><em class="cam_icon"></em>
+                                <p><strong>[배송] 제주산 흑돼지를 집에서 맛보고 싶을때</strong> <br>
+                                    제주 흑돼지 500g 제공
+                                </p>
+                            </div>
+                            <em><b>신청 0</b> / 2명</em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- #campaign 캠페인  -->
+    <section id="order">
+        <div class="order_contents">
+            <h3>티블 마케팅 진행 순서 </h3>
+            <div class="order_img wow bounceInUp">
+                <img src="imgs/order_img.png" alt="">
+                <em></em><em></em><em></em><em></em><em></em><em></em>
+            </div>
+        </div>
+    </section>
+    <!-- #order 진행 순서  -->
+    <section id="review">
+        <div class="review_con">
+            <div class="reivew_info">
+                <h3>티블 <br>
+                    인플루언서의 <br>
+                    진짜 후기
+                </h3>
+                <p>꼼꼼하고 리얼한 후기로 많은 분들에게 <br>
+                    정보를 공유하며 브랜딩을 만들어냅니다.</p>
+            </div>
+            <div class="reviews">
+                <div class="review_box">
+                    <a href="https://blog.naver.com/upeyesup/222649163555">
+                        <img src="imgs/r1.png" alt="">
+                        <div class="box_tit">
+                            <span>블로그</span>
+                            <em>[배송] 탐난다</em>
+                        </div>
+                        <span><img src="imgs/rv1.png" alt="">쿵맘</span>
+                    </a>
+                </div>
+                <div class="review_box">
+                    <a href="https://blog.naver.com/gowlsl2222/222649143483">
+                        <img src="imgs/r2.png" alt="">
+                        <div class="box_tit">
+                            <span>블로그</span>
+                            <em>[배송] 뜨락영농조합</em>
+                        </div>
+                        <span><img src="imgs/profile.png" alt="">지니주노</span>
+                    </a>
+                </div>
+                <div class="review_box">
+                    <a href="https://blog.naver.com/ewewoo/222648712378">
+                        <img src="imgs/r3.png" alt="">
+                        <div class="box_tit">
+                            <span>블로그</span>
+                            <em>[마포] 다이안</em>
+                        </div>
+                        <span><img src="imgs/profile.png" alt="">하이하잉</span>
+                    </a>
+                </div>
+                <div class="review_box">
+                    <a href="https://blog.naver.com/upeyesup/222649163555">
+                        <img src="imgs/r1.png" alt="">
+                        <div class="box_tit">
+                            <span>블로그</span>
+                            <em>[배송] 탐난다</em>
+                        </div>
+                        <span><img src="imgs/rv1.png" alt="">쿵맘</span>
+                    </a>
+                </div>
+                <div class="review_box">
+                    <a href="https://blog.naver.com/gowlsl2222/222649143483">
+                        <img src="imgs/r2.png" alt="">
+                        <div class="box_tit">
+                            <span>블로그</span>
+                            <em>[배송] 뜨락영농조합</em>
+                        </div>
+                        <span><img src="imgs/profile.png" alt="">지니주노</span>
+                    </a>
+                </div>
+                <div class="review_box">
+                    <a href="https://blog.naver.com/ewewoo/222648712378">
+                        <img src="imgs/r3.png" alt="">
+                        <div class="box_tit">
+                            <span>블로그</span>
+                            <em>[마포] 다이안</em>
+                        </div>
+                        <span><img src="imgs/profile.png" alt="">하이하잉</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 리뷰  -->
+    <section id="patner">
+        <div class="partner_con">
+            <h3><span>티블</span>과 함께하는 파트너사</h3>
+            <div class="patner_box partnerSp">
+                <div class="partners">
+                    <img src="imgs/par.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#partner 파트너사 -->
+    <section id="dbForm">
+        <div class="dbform_con">
+            <div class="form_le">
+                <img src="imgs/manager.png" alt="">
+                <div class="form_txt">
+                    <span>TBLE MANAGER</span>
+                    <p>담당자가 직접 광고주별 맞춤 상담해드립니다.</p>
+                </div>
+            </div>
+            <div class="form_ri">
+                <div class="form_bo_ri">
+                    <div class="form_bo_se">
+                        <h3>티블 광고 문의 신청하기</h3>
+                    </div>
+                    <div class="form_bo_box">
+                        <form action="https://formspree.io/f/xknyrnew" method="POST">
+                            <label for="company">회사명</label>
+                            <input type="text" name="company" id="company" placeholder="회사명을 입력해주세요" required>
+                            <label for="area">지역</label>
+                            <input type="text" name="area" id="area" placeholder="지역을 입력해주세요" required>
+                            <label for="name">성함/직책</label>
+                            <input type="text" name="name" id="name" placeholder="성함과 직책을 입력해주세요 (홍길동 / 사원)" required>
+                            <label for="number">연락처</label>
+                            <input type="text" name="number" id="number" placeholder="연락처를 입력해주세요 (숫자만 입력)" required>
+                            <textarea name="Message" placeholder="문의내용:" id="" cols="30" rows="10" required></textarea>
+                            <button type="submit" class="bottom_btn">광고문의하기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#dbForm 고객 디비폼  -->
+
+    <!-- slick slide js  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
+    </script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // only section slide
+        var myArray = ["POINT 01", "POINT 02", "POINT 03"];
+        const newSwiper = new Swiper(".new_swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (myArray[index]) + "</span>";
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // 광고주 대상 프로모션 section promotion 
+        var swiperSt = ["방문형", "배송형"];
+        const prSwiper = new Swiper(".pr_swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".pr-pagination.swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (swiperSt[index]) + "</span>";
+                },
+            },
+            navigation: {
+                nextEl: "pr-button.swiper-button-next",
+                prevEl: "pr-button.swiper-button-prev",
+            },
+        });
+
+
+
+        // review section slide
+        $('.reviews').slick({
+            slide: 'div', //슬라이드 되어야 할 태그 ex) div, li 
+            // rows: 2,
+            infinite: true, //무한 반복 옵션	 
+            slidesToShow: 3, // 한 화면에 보여질 컨텐츠 개수
+            slidesToScroll: 3, //스크롤 한번에 움직일 컨텐츠 개수
+            speed: 600, // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+            arrows: true, // 옆으로 이동하는 화살표 표시 여부
+            dots: true, // 스크롤바 아래 점으로 페이지네이션 여부
+            autoplay: true, // 자동 스크롤 사용 여부
+            autoplaySpeed: 10000, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+            pauseOnHover: true, // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+            vertical: false, // 세로 방향 슬라이드 옵션
+            prevArrow: "<button type='button' class='slick-prev'>Previous</button>", // 이전 화살표 모양 설정
+            nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정
+            dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
+            draggable: true, //드래그 가능 여부 
+
+            responsive: [ // 반응형 웹 구현 옵션
+                {
+                    breakpoint: 960, //화면 사이즈 960px
+                    settings: {
+                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768, //화면 사이즈 768px
+                    settings: {
+                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                        slidesToShow: 2
+                    }
+                }
+            ]
+
+        });
+
+
+
+        // partner section slide 
+        $('.patners').slick({
+            dots: true,
+            infinite: true,
+            rows: 2,
+            speed: 2000,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ]
+        });
+
+
+        // partner section slide 
+        $('.campaign_cards').slick({
+            dots: true,
+            infinite: true,
+            speed: 2000,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ]
+        });
+
+
+
+
+        //  var isVisible = false;
+        // $(window).on('scroll',function() {
+        //     if (checkVisible($('#order'))&&!isVisible) {
+        //         ('.order').addClass(active);
+        //         isVisible=true;
+        //     }
+        // });
+
+        // function checkVisible( elm, eval ) {
+        //     eval = eval || "object visible";
+        //     var viewportHeight = $(window).height(), // Viewport Height
+        //         scrolltop = $(window).scrollTop(), // Scroll Top
+        //         y = $(elm).offset().top,
+        //         elementHeight = $(elm).height();   
+
+        //     if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+        //     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+        // }
+
+        $(function () {
+            var $sesce = $('.st_sce');
+            var $offset = 300;
+            var $sesceOST = $sesce.offset().top - $offset;
+            var $featuresOST = $('.st_sce').offset().top - $offset;
+
+
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > $dsesceOST) {
+                    $sesce.find('img').addClass('animate')
+                }
+                if ($(this).scrollTop() > $deviceOST) {
+                    $('.st_sce').find('img').addClass('grow-img')
+                }
+                // else{
+                //     움직일때마다 모션인 나타나게 할 경우 else를 넣고 한번만 나오게 할 경우 if만
+                // }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
