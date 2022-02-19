@@ -1355,12 +1355,11 @@ section#review {
 .form_bo_se h3 {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .form_bo_box {
     width: 100%;
-    margin: 40px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -1373,7 +1372,7 @@ section#review {
 
 .form_bo_box input {
     width: 450px;
-    padding: 15px;
+    padding: 12px;
     display: block;
     border: none;
     outline: none;
@@ -1389,6 +1388,7 @@ section#review {
     padding: 15px;
     outline: none;
     font-size: 16px;
+    height: 150px;
 }
 
 .bottom_btn {
@@ -1397,7 +1397,7 @@ section#review {
     background: #00000c;
     color: #fff;
     border: none;
-    margin: 30px auto 0;
+    margin: 6px auto 0;
     font-size: 18px;
     padding: 15px 40px;
 }
