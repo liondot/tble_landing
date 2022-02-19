@@ -295,7 +295,7 @@ a {
 
 .container form input,
 .container form textarea {
-    padding: 25px 0;
+    padding: 20px 0;
     font-size: 18px;
     margin: 5px;
     background-color: transparent;
@@ -304,8 +304,9 @@ a {
 }
 
 .container form textarea {
-    text-indent: 20px;
     background: rgb(54, 54, 54);
+    padding: 10px;
+    height: 190px;
 }
 
 .container form input {
@@ -319,7 +320,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 250px;
-    margin: 60px auto 0;
+    margin: 30px auto 0;
 }
 
 /* ****************** promotion ****************** */
@@ -460,6 +461,17 @@ section#promotion {
 .only_items {
     margin-top: 150px;
 }
+
+#tabs-1,
+#tabs-2,
+#tabs-3 {
+    border: 2px solid red;
+    height: inherit;
+}
+
+
+
+
 
 #tabs ul {
     display: flex;
@@ -1029,25 +1041,19 @@ section#promotion {
 
 /* ****************** review ****************** */
 section#review {
-    height: 53vh;
+    height: 502px;
     margin: 100px 0;
 }
 
 #review {
     background: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 .review_con {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1200px;
-    position: relative;
-    top: 34%;
 }
 
 
@@ -1222,7 +1228,7 @@ section#review {
 #partner {
     background: #2e2e2e;
     text-align: center;
-    height: 73vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1579,6 +1585,7 @@ section#review {
     #tabs-1 {
         border: 2px solid red;
         width: 100%;
+
     }
 
 
