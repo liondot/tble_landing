@@ -1435,11 +1435,11 @@ section#review {
     }
 
     .lef_img img {
-        width: 82%;
+        width: 68%;
     }
 
     .ph_img.nvd_ph {
-        width: 124%;
+        width: 100%;
     }
 
     @keyframes moveDown {
