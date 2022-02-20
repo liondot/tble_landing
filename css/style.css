@@ -1378,9 +1378,9 @@ section#review {
     color: #fff !important;
 }
 
-@media (max-width :390px) {
+@media (max-width :500px) {
     body {
-        box-sizing: border-box !important;
+        box-sizing: border-box;
         overflow-x: hidden;
         width: 100%;
     }
