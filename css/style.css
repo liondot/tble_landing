@@ -512,7 +512,6 @@ section#promotion {
 
 .free_txts {
     display: flex;
-    justify-content: center;
     margin: 0 60px;
 }
 
@@ -892,7 +891,7 @@ section#promotion {
     z-index: -1;
 }
 
-.order_img em:nth-child(2){
+.order_img em:nth-child(2) {
     content: '';
     width: 330px;
     height: 280px;
@@ -902,7 +901,7 @@ section#promotion {
     animation-fill-mode: none
 }
 
-.order_img em:nth-child(3){
+.order_img em:nth-child(3) {
     left: 665px;
     background: url(../imgs/order3.png) no-repeat;
     animation: bgopa 2s 4s ease-in-out;
@@ -1056,6 +1055,7 @@ section#review {
     cursor: pointer;
 }
 
+
 .review_box .box_tit {
     display: flex;
     flex-direction: column;
@@ -1090,11 +1090,15 @@ section#review {
     width: 100%;
 }
 
-.review_box a>img {
+.review_box a .r_img {
     width: 100%;
     object-fit: cover;
     object-position: center;
     height: 290px;
+}
+
+.review_box a .r_img img {
+    width: 100%;
 }
 
 .review_box a p {
@@ -1388,7 +1392,6 @@ section#review {
     body {
         box-sizing: border-box;
         width: 100vw;
-        border: 2px solid cadetblue;
     }
 
     section {
@@ -1401,7 +1404,8 @@ section#review {
     }
 
     section#review {
-        margin: 163px 0;
+        margin: 0;
+        height: 100vh;
     }
 
     /* main  mo*/
@@ -1450,14 +1454,19 @@ section#review {
 
     @keyframes moveDown {
 
-        0% {bottom: -100px;}
-        100% {bottom: 0;}
+        0% {
+            bottom: -100px;
+        }
+
+        100% {
+            bottom: 0;
+        }
     }
 
     /* #promotion  mo */
     #promotion h3 {
         font-size: 30px;
-        padding-bottom: 45px !important;
+        padding-bottom: 30px !important;
     }
 
     #promotion .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -1471,12 +1480,12 @@ section#review {
         align-items: unset !important;
     }
 
-    
-    .pro_card  {
-        height: 220px; 
+
+    .pro_card {
+        height: 220px;
         width: 90% !important;
-        flex-direction: column !important;  
-        overflow: hidden;     
+        flex-direction: column !important;
+        overflow: hidden;
         padding: 20px !important;
         position: relative;
     }
@@ -1493,7 +1502,7 @@ section#review {
         line-height: 30px;
     }
 
-    .pro_title span{
+    .pro_title span {
         font-size: 18px;
     }
 
@@ -1542,11 +1551,17 @@ section#review {
     /* only mo */
     .tabs {
         display: none;
-        border: 2px solid red;
+    }
+
+    .items {
+        border: 2px solid green;
+
     }
 
     .mo_tabs {
         display: block;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .mo_tabs .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -1557,15 +1572,24 @@ section#review {
         padding: 10px 40px !important;
     }
 
-    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal>.swiper-pagination-bullets {
         transform: unset;
     }
 
-    .only_title h3 {
-        font-size: 30px;
+    .only_items {
+        margin-top: 0;
     }
 
-    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal>.swiper-pagination-bullets {
+    .only_title h3 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal>.swiper-pagination-bullets {
         top: unset;
     }
 
@@ -1574,7 +1598,8 @@ section#review {
         width: 200px;
     }
 
-    .tab2.free_txts, #tabs-3 p {
+    .tab2.free_txts,
+    #tabs-3 p {
         margin-top: 0;
     }
 
@@ -1583,13 +1608,60 @@ section#review {
 
     }
 
+    .mo_tabs .mo_items {
+        display: flex;
+        padding-top: 75px;
+    }
 
-
-    .mo_only_img {
-        border: 2px solid purple;
+    .mo_tabs .new-pagination {
+        border: 2px solid green;
     }
 
 
+    #tabs-1,
+    #tabs-2,
+    #tab-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #tabs-1 img,
+    #tabs-2 img,
+    #tabs-3 img {
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .mo_tabs .mo_items .free_txts {
+        flex-direction: column;
+    }
+
+    .free_txts {
+        margin: 0;
+    }
+
+    .free_txt {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .free_txt strong {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .free_txt span {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .mo_tabs .swiper-wrapper {
+        width: unset;
+    }
+
+    #only .swiper-pagination-clickable .swiper-pagination-bullet {
+        border: 2px solid green;
+    }
 
 
     /* streng mo */
@@ -1599,7 +1671,7 @@ section#review {
         border: none;
         overflow: hidden;
     }
-    
+
     .streng img {
         display: none;
     }
@@ -1609,7 +1681,6 @@ section#review {
         overflow: hidden;
         animation: none;
         width: 100%;
-        border: 2px solid red;
         flex-wrap: wrap;
         padding: 0 10px;
     }
@@ -1623,7 +1694,6 @@ section#review {
     .streng .st_box {
         width: 150px;
         height: 200px;
-        /* animation: none; */
     }
 
     .streng_container.slideInLeft {
@@ -1631,11 +1701,10 @@ section#review {
     }
 
     .streng_container.rotateIn {
-        animation-delay: 0;
+        animation-delay: 0s;
     }
 
     .streng_container {
-        /* animation: none; */
         display: flex;
     }
 
@@ -1650,8 +1719,6 @@ section#review {
     }
 
 
-
-
     /* campaign mo */
     .campaign_con {
         width: 100%;
@@ -1659,7 +1726,7 @@ section#review {
     }
 
     .campaign_con h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .campaign_card img {
@@ -1671,13 +1738,13 @@ section#review {
         padding: 40px 0;
     }
 
-    .order_img > img,
+    .order_img>img,
     .order_img em,
     .order_img em em,
     .order_img em em em,
     .order_img em em em em,
     .order_img em em em em em,
-    .order_img em em em em em em{
+    .order_img em em em em em em {
         display: none;
         visibility: hidden;
     }
@@ -1688,25 +1755,43 @@ section#review {
         width: 100%;
         padding: 0;
     }
-    
-    /* review mo */
 
-    .reviews {
-        border: 2px solid green;
+    /* review mo */
+    #review {
+        display: unset;
+        margin: 0 20px !important;
+        width: 100vw;
+        height: 100%;
     }
 
     .review_box {
-        border: 2px solid red;
         margin-top: 245px;
+        width: 350px !important;
+    }
+
+    .review_box a {
+        object-position: center;
+        width: 100%;
+    }
+
+    .review_box a .r_img {
+        overflow: hidden;
+        height: auto;
+    }
+
+    .review_box a .r_img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .reivew_info {
         position: absolute;
         width: 100%;
         right: 0;
-        border: 2px solid gray;
         margin-right: 0;
-        margin-top: 90px;
+        margin-top: 40px;
+        padding: 0 10px;
     }
 
     .reivew_info h3 {
@@ -1725,19 +1810,16 @@ section#review {
         display: block;
         font-size: 30px;
     }
-  
+
 
     /* partner mo */
-
-    .reivew_info {
-        border: 2px solid green;
-    }
 
     #partner {
         height: 100vh;
         padding-bottom: 0;
         padding: 0 10px;
     }
+
     .partner_con h3 {
         font-size: 30px;
     }
@@ -1748,9 +1830,11 @@ section#review {
 
     .mo_partners {
         display: block;
+
     }
 
     .mo_partners img {
+        width: 90%;
         margin-bottom: 10px;
     }
 
@@ -1769,7 +1853,7 @@ section#review {
         width: 100%;
     }
 
-    .form_bo_se h3{
+    .form_bo_se h3 {
         font-size: 30px;
     }
 
@@ -1778,14 +1862,14 @@ section#review {
 
     }
 
-    .form_bo_box form{
+    .form_bo_box form {
         width: 100%;
     }
 
     .form_bo_box form {
         width: 100%;
         overflow: hidden;
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .form_bo_box form input,
@@ -1798,9 +1882,9 @@ section#review {
     }
 
     .pr-pagination.swiper-pagination {
-        top: 30px !important;
+        top: 12px !important;
     }
-    
+
     .tab2_img {
         width: 100%;
         box-sizing: border-box;
@@ -1814,12 +1898,13 @@ section#review {
     }
 
     .mo_items div {
-        width: 60%;
+        width: 90%;
     }
 
     .mo_items div:nth-child(2) img {
         width: 250px;
     }
+
     .mo_items div:last-child img {
         width: 50%;
     }

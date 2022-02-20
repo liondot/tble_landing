@@ -350,8 +350,8 @@ button.swiper-pagination-bullet {
 
 .pr-pagination.swiper-pagination {
     position: absolute;
-    top: 13px !important;
-    left: 50% !important;
+    top: 43px;
+    left: 50%;
     transform: translateX(-50%);
 }
 .pr-pagination .swiper-pagination-bullet {
