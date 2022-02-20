@@ -173,20 +173,17 @@
                     </div>
                 </div>
                 <div id="tabs-2" class="swiper-slide">
-                    <div class="tab2_img">
-                        <img src="imgs/report.png" alt="">
-                        <img src="imgs/report2.png" alt="">
-                    </div>
                     <div class="tab2 free_txts">
                         <p>온라인 마케팅은 진행뿐만 아니라 광고주님들께서 확인 하실 수 있는 보고 내용이 가장 중요합니다. <br>
                             티블은 정확한 데이터 기반 분석시스템을 통해, <strong>고도화된 마케팅 리포트를 제공</strong>합니다.</p>
                     </div>
+                    <div class="tab2_img">
+                        <img src="imgs/report.png" alt="">
+                        <img src="imgs/report2.png" alt="">
+                    </div>
+                   
                 </div>
                 <div id="tabs-3" class="swiper-slide">
-                    <p>
-                        리뷰 마케팅에는 다양한 정보가 존재합니다. 티블은 다양한 정보를 빅데이터화하여 최적의 마케팅 솔루션을 제공하고 <br>
-                        수년간의 노하우로 체계적으로 리뷰어를 관리하는 전문성을 보유하고 있습니다.
-                    </p>
                     <div class="tab3_img">
                         <img src="imgs/bigdata.png" alt="">
                     </div>
@@ -218,7 +215,7 @@
             <div class="swiper-button-next"></div>
         </div>
 
-        <div class="mo_tabs mo_only_tabs new_swiper">
+        <div class="mo_tabs mo_only_tabs mo_new_swiper">
             <div class="mo_items only_items swiper-wrapper">
                 <div id="tabs-1" class="swiper-slide">
                     <img src="imgs/mo_only1.png" alt="" class="mo_only_img">
@@ -253,10 +250,6 @@
                     </div>
                 </div>
                 <div id="tabs-3" class="swiper-slide">
-                    <p>
-                        리뷰 마케팅에는 다양한 정보가 존재합니다. 티블은 다양한 정보를 빅데이터화하여 최적의 마케팅 솔루션을 제공하고 <br>
-                        수년간의 노하우로 체계적으로 리뷰어를 관리하는 전문성을 보유하고 있습니다.
-                    </p>
                     <div class="tab3_img">
                         <img src="imgs/mo_only3.png" alt="">
                     </div>
@@ -292,7 +285,7 @@
     <section id="streng" class="st_sce">
         <div class="streng_container wow slideInLeft" data-wow-duration="1.5s">
             <div class="streng">
-                <img src="imgs/img_yellow.png" class="streng_img" alt="">
+               <div class="stren_img"><img src="imgs/img_yellow.png" alt=""></div>
                 <div class="st_boxs">
                     <div class="st_box wow rotateIn" data-wow-delay="1s">
                         <img src="imgs/3section_icon.png" alt="">
@@ -495,10 +488,16 @@
     <section id="order">
         <div class="order_contents">
             <h3>티블 마케팅 진행 순서 </h3>
-            <div class="order_img wow bounceInUp">
+            <!-- <div class="order_img wow bounceInUp"> -->
+            <div class="order_img">
                 <img src="imgs/order_img.png" alt="">
                 <img src="imgs/mo_order.png" alt="" class="mo_order">
-                <em></em><em></em><em></em><em></em><em></em><em></em>
+                <em></em>
+                <em></em>
+                <em></em>
+                <em></em>
+                <em></em>
+                <em></em>
             </div>
         </div>
     </section>
@@ -635,6 +634,8 @@
     </script>
     <script src="js/main.js"></script>
 
+
+    
     <script>
         // only section slide
         var myArray = ["POINT 01", "POINT 02", "POINT 03"];
@@ -689,10 +690,6 @@
             
             
         });
-
-        // review section slide 
-
-
 
 
 
@@ -774,7 +771,7 @@
         });
 
 
-        // partner section slide 
+        // campaign section slide 
         $('.campaign_cards').slick({
             dots: true,
             infinite: true,
@@ -812,26 +809,6 @@
 
 
 
-        $(function () {
-            var $sesce = $('.st_sce');
-            var $offset = 300;
-            var $sesceOST = $sesce.offset().top - $offset;
-            var $featuresOST = $('.st_sce').offset().top - $offset;
-
-
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > $dsesceOST) {
-                    $sesce.find('img').addClass('animate')
-                }
-                if ($(this).scrollTop() > $deviceOST) {
-                    $('.st_sce').find('img').addClass('grow-img')
-                }
-                // else{
-                //     움직일때마다 모션인 나타나게 할 경우 else를 넣고 한번만 나오게 할 경우 if만
-                // }
-            });
-        });
     </script>
 
 

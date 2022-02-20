@@ -239,6 +239,16 @@ button.swiper-pagination-bullet {
     left: 0;
 }
 
+/* yoon edit start*/
+#only .swiper-container-horizontal>.swiper-pagination-bullets {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-1055%);
+    left: 0;
+}
+
+/* yoon edit end  */
+
 #review .swiper-pagination-bullets {
     display: none;
 }
