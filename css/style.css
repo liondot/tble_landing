@@ -577,9 +577,8 @@ section#promotion {
 
 .tab2.free_txts,
 #tabs-3 p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
-    /* margin-top: 50px; */
     color: #333;
 }
 
@@ -594,6 +593,10 @@ section#promotion {
 
 .tabs3_txts {
     margin-top: 30px;
+}
+
+.mo_tab3_img {
+    display: none;
 }
 
 .tabs3_txt {
@@ -1540,6 +1543,9 @@ section#review {
 
     .new-pagination.swiper-pagination-bullet {
         border: 2px solid ghostwhite;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .pr_swiper {
@@ -1551,6 +1557,7 @@ section#review {
     /* only mo */
     .tabs {
         display: none;
+        position: relative;
     }
 
     .items {
@@ -1603,18 +1610,16 @@ section#review {
         margin-top: 0;
     }
 
+   
+
     #tabs-1 {
         width: 100%;
-
+        padding: 0 10px;
     }
 
     .mo_tabs .mo_items {
         display: flex;
-        padding-top: 75px;
-    }
-
-    .mo_tabs .new-pagination {
-        border: 2px solid green;
+        padding-top: 85px;
     }
 
 
@@ -1624,16 +1629,40 @@ section#review {
         display: flex;
         justify-content: space-between;
     }
+    
 
     #tabs-1 img,
     #tabs-2 img,
     #tabs-3 img {
         width: 70%;
         margin-right: 10px;
+        
+    }
+
+    #tabs-3 img {
+        margin-right: unset;
+        margin: unset;
+    }
+
+    #tabs-2 {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #tabs-2 img {
+        width: 100% !important;
+    }
+
+    #tabs-2 .tab2_img {
+        margin: 0 auto;
     }
 
     .mo_tabs .mo_items .free_txts {
         flex-direction: column;
+        padding-top: 20px;
+        margin: 0 auto;
+        align-items: center;
     }
 
     .free_txts {
@@ -1659,16 +1688,55 @@ section#review {
         width: unset;
     }
 
-    #only .swiper-pagination-clickable .swiper-pagination-bullet {
-        border: 2px solid green;
+    .mo_items #tabs-3 .tab3_img img {
+        width: 58%;
+    }
+
+    .tab3_img {
+        background-color: transparent;
+    }
+
+    #only .swiper-container-horizontal>.swiper-pagination-bullets {
+        top: 21% !important;
+    }
+
+    
+    .tabs3_txt.free_txt:nth-child(2) {
+        margin-left: unset;
+    }
+
+    .tabs3_txt:first-child {
+        width: unset;
+    }
+
+    .tab3_img {
+        background-color: #fff;
+        padding: 20px;
+        display: none;
+    }
+
+    .mo_tab3_img {
+        display: block;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px 0;
+        margin-bottom: 15px;
+        width: 100px;
+    }
+
+    .mo_tab3_img img {
+        width: 150px;
+    }
+
+    .tabs3_txts {
+        padding-left: 30px;
     }
 
 
     /* streng mo */
     #streng {
         height: auto;
-        margin: 50px 0;
-        border: none;
+        padding: 50px 0;
         overflow: hidden;
     }
 
@@ -1767,6 +1835,7 @@ section#review {
     .review_box {
         margin-top: 245px;
         width: 350px !important;
+        margin-left: 14px;
     }
 
     .review_box a {
