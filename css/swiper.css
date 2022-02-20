@@ -349,9 +349,9 @@ button.swiper-pagination-bullet {
 }
 
 .pr-pagination.swiper-pagination {
-    position: absolute;  
-    top: 50px;
-    left: 50%;
+    position: absolute;
+    top: 13px !important;
+    left: 50% !important;
     transform: translateX(-50%);
 }
 .pr-pagination .swiper-pagination-bullet {
