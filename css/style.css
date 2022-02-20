@@ -21,6 +21,11 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Pretendard-Regular';
     margin: 0;
@@ -1381,8 +1386,8 @@ section#review {
 @media (max-width :500px) {
     body {
         box-sizing: border-box;
-        overflow-x: hidden;
-        width: 100%;
+        width: 100vw;
+        border: 2px solid cadetblue;
     }
 
     section {
@@ -1557,6 +1562,7 @@ section#review {
         height: auto;
         margin: 50px 0;
         border: none;
+        overflow: hidden;
     }
     
     .streng img {
@@ -1567,13 +1573,16 @@ section#review {
         box-sizing: border-box;
         overflow: hidden;
         animation: none;
+        width: 100%;
+        border: 2px solid red;
+        flex-wrap: wrap;
+        padding: 0 10px;
     }
 
     .st_boxs {
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: space-between;
-        flex-direction: column;
     }
 
     .streng .st_box {
