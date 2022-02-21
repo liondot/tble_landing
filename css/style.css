@@ -580,6 +580,8 @@ section#promotion {
     font-size: 18px;
     line-height: 1.5;
     color: #333;
+    display: block;
+    margin: 0 auto;
 }
 
 .tab2.free_txts strong {
@@ -676,7 +678,6 @@ section#promotion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     float: left;
 }
 
