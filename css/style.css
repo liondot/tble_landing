@@ -1937,6 +1937,11 @@ section#review {
 
 
     /* dbForm mo */
+    section#dbForm {
+        padding-bottom: 70px;
+        background: #eee;
+    }
+
 
     .form_le img {
         display: none;
@@ -1973,6 +1978,12 @@ section#review {
     .form_bo_box form textarea {
         width: 100%;
     }
+    .form_bo_box label {
+        font-size: 15px;
+    }
+    .form_bo_box form input {
+        margin: 10px 0 !important;
+    }
 
     .swiper-pagination-clickable .swiper-pagination-bullet {
         padding: 10px 10px !important;
@@ -2006,6 +2017,44 @@ section#review {
         width: 50%;
     }
 
+    /* add btn  */
+
+
+    .add_btn {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: var(--point-color);
+        z-index: 100;
+        font-size: 20px;
+        width: 100%;
+        box-shadow:  10px 4px 10px 1px rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+
+    .add_btn p {
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 1px;
+    }
+
+    .add_btn:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 50px;
+        background: rgb(31, 31, 31) url(../imgs/btn_arrow.svg) no-repeat center / 30% ;
+    }
+
+    .add_btn .logo_add {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
 
 
 }
