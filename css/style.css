@@ -568,11 +568,9 @@ section#promotion {
 #tabs-2 .tab2_img img {
     width: 40%;
     display: flex;
-    margin: 10px;
     margin-right: 20px;
     background-color: #fff;
     border-radius: 20px;
-    padding: 10px;
 }
 
 .tab2.free_txts,
@@ -1556,14 +1554,12 @@ section#review {
 
 
     /* only mo */
+    #only {
+        background: #fff;
+    }
     .tabs {
         display: none;
         position: relative;
-    }
-
-    .items {
-        border: 2px solid green;
-
     }
 
     .mo_tabs {
@@ -1601,14 +1597,27 @@ section#review {
         top: unset;
     }
 
-    .tab2_img img,
-    .tab3_img img {
-        width: 200px;
+    .tab2_img {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab2_img img {
+       border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .tab2_img img:first-child {
+        margin-bottom: 40px !important;
     }
 
     .tab2.free_txts,
     #tabs-3 p {
-        margin-top: 0;
+        margin-top: 0 ;
+    }
+
+    .tab2.free_txts {
+        font-size: 20px;
     }
 
    
@@ -1635,7 +1644,7 @@ section#review {
     #tabs-1 img,
     #tabs-2 img,
     #tabs-3 img {
-        width: 70%;
+        width: 100%;
         margin-right: 10px;
         
     }
@@ -1667,26 +1676,44 @@ section#review {
     }
 
     .free_txts {
-        margin: 0;
+        margin: 0 auto;
+    }
+
+    .free_txts img {
+        margin-bottom: 20px;
     }
 
     .free_txt {
         margin: 0;
-        margin-bottom: 20px;
+        margin: 25px 0;
     }
 
-    .free_txt strong {
-        font-size: 18px;
-        margin: 5px 0;
+    .mo_tabs #mo_tabs .free_txt strong {
+        font-size: 20px;
+        margin: 5px;
+        font-weight: var(--font-weight-nomal);
     }
 
-    .free_txt span {
+    .mo_tabs #mo_tabs .free_txt span {
         font-size: 16px;
         margin: 10px 0;
+        font-weight: var(--font-wight-light);
     }
 
     .mo_tabs .swiper-wrapper {
         width: unset;
+    }
+
+    .tabs3_txt {
+        background: transparent;
+    }
+
+    .tabs3_txt strong{
+        font-size: 20px;
+    }
+
+    .tabs3_txt span{
+        font-size: 20px;
     }
 
     .mo_items #tabs-3 .tab3_img img {
@@ -1698,7 +1725,7 @@ section#review {
     }
 
     #only .swiper-container-horizontal>.swiper-pagination-bullets {
-        top: 21% !important;
+        top: 18% !important;
     }
 
     
