@@ -512,7 +512,8 @@ section#promotion {
 
 .free_txts {
     display: flex;
-    margin: 0 60px;
+    margin: 0 130px;
+    
 }
 
 .free_txt {
@@ -563,6 +564,7 @@ section#promotion {
 #tabs-2 .tab2_img {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 #tabs-2 .tab2_img img {
@@ -607,6 +609,7 @@ section#promotion {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .tabs3_txt strong {
