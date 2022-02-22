@@ -882,6 +882,10 @@ section#promotion {
     display: none;
 }
 
+.mo_order_bg {
+    display: none;
+}
+
 .order_img #order_bg {
     width: 335px;
     height: 280px;
@@ -1078,6 +1082,7 @@ section#review {
 
 .reivew_info {
     margin-right: 35px;
+
 }
 
 .reivew_info h3 {
@@ -1878,8 +1883,10 @@ section#review {
     /* campaign mo */
     .campaign_con {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
     }
+
+   
 
     .campaign_con h3 {
         font-size: 25px;
@@ -1893,23 +1900,17 @@ section#review {
     #order {
         padding: 40px 0;
     }
-
-    .order_img>img,
-    .order_img em,
-    .order_img em em,
-    .order_img em em em,
-    .order_img em em em em,
-    .order_img em em em em em,
-    .order_img em em em em em em {
-        display: none;
-        visibility: hidden;
-    }
+   #p_order_img,
+   #order_bg {
+       display: none;
+   }
 
     .order_img .mo_order {
         display: block;
         visibility: visible;
         width: 100%;
         padding: 0;
+        position: relative;
     }
 
     /* review mo */
@@ -1942,6 +1943,11 @@ section#review {
         object-fit: cover;
     }
 
+    .review_con {
+        position: static;
+        flex-direction: column;
+    }
+
     .reivew_info {
         position: absolute;
         width: 100%;
@@ -1949,6 +1955,8 @@ section#review {
         margin-right: 0;
         margin-top: 40px;
         padding: 0 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .reivew_info h3 {
@@ -1959,13 +1967,12 @@ section#review {
         display: none;
     }
 
-    .review_con {
-        position: static;
-    }
+    
 
     .mo_review_txt {
         display: block;
         font-size: 30px;
+        margin-bottom: 20px;
     }
 
 
