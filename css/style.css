@@ -1225,59 +1225,66 @@ section#review {
 }
 
 .reviews .slick-dots li button:before {
-    border: 4px solid gray !important;
+    /* display: none; */
+}
+
+.reviews .slick-prev.slick-arrow,
+.reviews .slick-next.slick-arrow {
+    border: 3px solid rgba(0,0,0,0.3);
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+}
+
+.reviews .slick-prev.slick-arrow:after {
+    content: '';
+    color: #000;
+    width: 25px;
+    height: 22px;
     position: absolute;
     top: 50%;
-    right: 0;
-    margin-right: 5px;
-    margin-top: 20px;
-    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : url(../imgs/prev_arrow.png) no-repeat center / auto 100%;
 }
 
-.slick-dots li button {
-    border: none;
-    outline: none;
-    margin-right: 0;
-    width: 0;
-    height: 0;
+.reviews .slick-next.slick-arrow:after {
+    content: '';
+    color: #000;
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : url(../imgs/next_arrow.png) no-repeat center / auto 100%;
+}
+
+
+.slick-next,
+.slick-prev {
+    position: absolute;
+    top: 262px !important;
+    left: -231px !important;
+    z-index: 50;
+    width: 45px;
+    height: 45px;
+}
+
+.reviews .slick-prev {
+    left: -292px !important;
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before {
+    color: #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
     font-size: 0;
 }
-
-.reviews .slick-dots li button:before {
-    content: ">";
-    color: #333;
-    border: none !important;
-    position: absolute;
-}
-
-.reviews .slick-dots li:last-child button:before {
-    margin-top: 0;
-    position: absolute;
-    top: -33px;
-    left: 0px;
-}
-
-.slick-dots li.slick-active button:before {
-    border: none;
-}
-
-.reviews .slick-dots li:first-child button:before {
-    content: "\f104";
-    font-family: fontawesome;
-    font-size: 30px;
-    color: #333 !important;
-    margin-right: 50px;
-}
-
-.reviews .slick-dots li:last-child button:before {
-    content: "\f105";
-    font-family: fontawesome;
-    font-size: 30px;
-    color: #333 !important;
-    margin-left: 30px;
-}
-
 
 /* ****************** partner ****************** */
 #partner {
@@ -1998,7 +2005,6 @@ footer {
     }
 
     .mo_img_order {
-        display: none;
         position: relative;
     }
 
