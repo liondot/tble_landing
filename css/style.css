@@ -1275,6 +1275,7 @@ section#review {
     left: -292px !important;
 }
 
+
 .slick-next:before, [dir=rtl] .slick-prev:before {
     color: #000;
     width: 45px;
@@ -2005,6 +2006,7 @@ footer {
     }
 
     .mo_img_order {
+        display: none;
         position: relative;
     }
 
@@ -2184,6 +2186,8 @@ footer {
     .add_btn {
         display: block;
         position: fixed;
+        justify-content: space-between;
+        align-items: center;
         bottom: 0;
         height: 50px;
         text-align: center;
@@ -2191,14 +2195,10 @@ footer {
         background: var(--point-color);
         z-index: 100;
         font-size: 20px;
-        width: 100%;
+        width: 90%;
         box-shadow:  10px 4px 10px 1px rgba(0,0,0,0.3);
         cursor: pointer;
-    }
-
-    .add_btn p {
-        font-weight: var(--font-weight-nomal);
-        letter-spacing: 1px;
+        border-radius: 0 50px 0 0;
     }
 
     .add_btn:after {
@@ -2210,12 +2210,27 @@ footer {
         width: 60px;
         height: 50px;
         background: rgb(31, 31, 31) url(../imgs/btn_arrow.svg) no-repeat center / 30% ;
+        border-radius: 0 40px 0 0;
+        overflow: hidden;
     }
 
-    .add_btn .logo_add {
-        width: 50px;
+    .add_btn p {
+        display: flex;
         height: 50px;
-        padding: 10px;
+        font-size: 15px;
+        color: rgb(255, 252, 246);
+        font-size: 18px;
+    }
+
+    .add_btn img {
+        width: 100px;
+        height: 50px;
+        padding: 0 10px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        float: left;
     }
 
     /* footer  */
