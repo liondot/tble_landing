@@ -1235,9 +1235,31 @@ section#review {
     padding: 10px;
 }
 
+.slick-dots li button {
+    border: none;
+    outline: none;
+    margin-right: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
 .reviews .slick-dots li button:before {
     content: ">";
     color: #333;
+    border: none !important;
+    position: absolute;
+}
+
+.reviews .slick-dots li:last-child button:before {
+    margin-top: 0;
+    position: absolute;
+    top: -33px;
+    left: 0px;
+}
+
+.slick-dots li.slick-active button:before {
+    border: none;
 }
 
 .reviews .slick-dots li:first-child button:before {
