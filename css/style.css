@@ -39,7 +39,7 @@ section {
 }
 
 button {
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 24px;
     color: var(--point-color);
     background-color: transparent;
@@ -1392,6 +1392,43 @@ section#review {
 .slick-dots li button:before {
     color: #fff !important;
 }
+
+.add_btn {
+    display: none;
+}
+
+/* ad form edit start */
+
+.container form input, .container form textarea {
+    padding: 5px 0;
+}
+.main_ri {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.thankyou_message {
+    color: #fff;
+    width: 100%;
+    border: 2px solid #fff;
+    display: none;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.footer_thankyou_message {
+    color: #333;
+    width: 100%;
+    border: 2px solid #333;
+    display: none;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* ad form edit end */
+
 
 @media (max-width :500px) {
     body {
