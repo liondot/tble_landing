@@ -17,7 +17,9 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+
 
 * {
     box-sizing: border-box;
@@ -79,6 +81,10 @@ a {
     text-decoration: none;
     color: #333;
 }
+
+.hide {
+    overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;
+}
 /* ****************** top banner ****************** */
 .top_banner {
     height: 60px;
@@ -105,7 +111,6 @@ a {
 .banner_con p {
     font-size: 24px;    
     vertical-align: middle;
-
 }
 
 .banner_con p em {
@@ -364,6 +369,7 @@ a {
 
 .container form input,
 .container form textarea {
+    width: 100%;
     padding: 20px 0;
     font-size: 18px;
     margin: 5px;
@@ -390,6 +396,30 @@ a {
     align-items: center;
     width: 220px;
     margin: 30px auto 0;
+}
+
+/* thankyou_message  */
+.thankyou_message,
+.footer_thankyou_message {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    border-radius: 40px;
+    display: none;
+}
+
+.footer_thankyou_message span,
+.thankyou_message span {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer_thankyou_message p,
+.thankyou_message p {
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 /* ****************** promotion ****************** */
@@ -1082,6 +1112,7 @@ section#review {
 
 .review_con {
     display: flex;
+    position: relative;
 }
 
 
@@ -1112,9 +1143,9 @@ section#review {
     display: flex;
     width: 900px;
     height: 800px;
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    right: 0;
+    right: 0; */
 }
 
 .review_box {
@@ -1303,6 +1334,11 @@ section#review {
     margin-left: 0;
     display: flex;
     flex-wrap: wrap;
+}
+
+.partners img {
+    width: 100%;
+    
 }
 
 .mo_partners {
@@ -1513,8 +1549,12 @@ footer {
 }
 
 .col-m4 ul li:first-child {
-    font-size: 35px;
+    font-size: 30px;
     position: relative;
+}
+
+.col-m4 ul li:nth-child(2){
+    font-size: 20px;
 }
 
 .col-m4 ul li img {
@@ -2303,6 +2343,10 @@ footer {
 
     .col-m4 ul li {
         text-align: left;
+    }
+
+    .col-m6l ul li {
+        margin: 0 15px;
     }
 
 }
